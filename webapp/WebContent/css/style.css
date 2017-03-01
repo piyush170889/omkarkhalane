@@ -1,0 +1,537 @@
+@charset "utf-8";
+/* CSS Document */
+body,html,div,ul,li,a,p,span{
+	margin:0;
+	padding:0;
+	font-family:Candara;	
+}
+html{
+	background-color:whitesmoke;
+}
+.omk_header{
+	width:100%;
+	float:left;
+	background-color:#06C;
+	height:4em;	
+}
+.userinfo{
+	width:20%;
+	float:right;
+	height:auto;	
+}
+.userinfo p{
+	margin:0.6em;
+	color:#FFF;
+}
+.userpic{
+	border-radius:1.5em;
+	height:3em;
+	width:3em;
+	border:1px solid #777;
+	margin:0.5em 0 0.5em 2em;
+	background-color:whitesmoke;
+	float:left;
+}
+.userpic i{
+	font-size:28px;	
+	margin:0.2em 0 0 0.3em;
+	color:#CCC;
+}
+
+/** Navigation Start**/
+.navigation{
+	width:100%;
+	float:left;
+	height:2.5em;		
+	background-color:#2D6DDA;
+}
+.menu{
+	list-style-type:none;	
+	padding:0 0 0 0;
+}
+.menu li{
+	display:inline;
+	padding:0.6em 0;
+	float:left;
+	width:25%;
+	text-align:center;
+}
+.menu li>a{
+	text-decoration:none;
+	color:#FFF;
+	text-align:center;	
+}
+.omk_active{
+	background-color:#1456A7;	
+}
+/** Navigation End**/
+
+/** Appointment Info Start**/
+.info{
+	width:100%;
+	height:auto;
+	padding:0 0 0.2em 1em;
+	margin:0 0 2em;
+	background-color:beige;
+	border:1px solid #900;	
+	border-radius:26px;
+	color:#9C5353;
+	font-size:12px;
+}
+.info i{
+	font-size:14px;
+	margin:0.3em 0.5em 0 7em;
+	color:#337ab7;	
+}
+.info span{
+	font-size:17px;
+	margin:0 0.2em ;	
+	color: #900;
+    font-weight: bold;
+}
+/** Apointment Info End **/
+
+/** Book Appointment Start **/
+.bookappointment{
+	width: 100%;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+.bookappointment fieldset{
+	border:1px solid blueviolet;
+	font-size:14px;
+	padding:1.5em;	
+}
+.bookappointment legend{
+	width:19%;
+	font-size:14px;	
+	padding:0 0.3em;
+	color: blueviolet;
+	border:none;
+	margin:0;
+}
+.bookappointment td{
+	font-size:14px;	
+	padding:0 0.3em;
+	color: blueviolet;
+	margin:1em;
+	text-align:right;
+}
+.bookappointment>label{
+	font-weight:bold;		
+}
+.bookappointment input[type=text]{
+	text-align:center;
+	border:1px solid #CCC;
+	font-size:12px;	
+	width:90%;
+	margin:1em;
+	line-height:1.3em;
+	height:25px;
+}
+.bookappointment select{
+	border:1px solid #CCC;
+	font-size:12px;	
+	width:60%;
+	margin:0.5em 0 0.5em 2.1em;
+	float:left;
+	line-height:1.3em;
+	height:25px;	
+}
+.bookappointment option{
+	text-align:center;	
+}
+.bookappointment input[type=submit]{
+	color:#FFF;
+	font-weight:bold;
+	background-color:blueviolet;
+	border:none;
+	border-radius:5px;
+	padding:0.5em 1.5em;	
+	margin:0.5em 12em;
+}
+
+.book_appointment_table{
+	width:100%;	
+	float:left;
+}
+
+.book_appointment_table i{
+	margin-right:0.5em;
+	background-color:#337ab7;
+	padding:0.3em;
+	color:#FFFFFF;
+	border-radius:10px;
+	width:20px;
+	height:20px;
+}
+.bookinginfotable{
+	width:90%;
+	margin:0 0.5em;
+}
+.bookinginfotable th{
+	text-align:center;
+}
+.btn_look{
+	text-decoration:none;
+	color:#FFFFFF;
+	border:1.5px solid #337ab7;
+	padding:0.1em 0;
+	width:18%;
+	margin-left:1em;	
+	display:block;
+	border-radius:1.5em;
+	background-color:#337ab7;
+}
+/** Book Appointment End **/
+
+/** Manage Appointments **/
+.manage_appointments{
+	width:60%;
+	float:left;
+	margin: 1em 0 1em 19em;
+}
+.manage_appointments a{
+	float:left;
+	margin:0 1em;	
+	color:#FFFFFF;
+	background-color:#337ab7;
+	padding: 0.2em 1.4em 0.3em 0;
+    border-radius: 3px;
+    border: 1px solid #337ab7;
+    text-decoration: none;
+}
+.manage_appointments i{
+	margin:0 0.5em;
+	color:#FFFFFF;
+	background-color:#337ab7;
+	padding: 0.3em;	
+}
+/** /Manage Appointments **/
+
+/** Appointment info **/
+.appointment_info{
+	width: 95%;
+    float: left;
+    height: auto;
+    margin: 1em 2em;	
+}
+.appointment_info h5{
+	text-align:center;
+	background-color:#CCC;
+	color:#333;
+	margin:0;
+	padding: 0.5em 2em;
+    font-weight: bold;
+    word-spacing: 0.3em;
+    border: 1px solid #666;
+}
+/** /Appointment info **/
+
+/** responsive tables **/
+.responstable {
+  /**margin: 1em 0; **/
+  margin:0;
+  width: 100%;
+  overflow: hidden;
+  background: #FFF;
+  color: #024457;
+  border-radius: 10px;
+  border: 1px solid #167F92;
+  font-size:13px;
+}
+.responstable a{
+	color:#024457;
+	text-decoration: underline;	
+}
+.responstable tr {
+  border: 1px solid #D9E4E6;
+  font-weight: bold;
+}
+.responstable tr:nth-child(odd) {
+  background-color: #EAF3F3;
+}
+.responstable th {
+  display: none;
+  border: 1px solid #337ab7;
+  background-color: #337ab7;
+  color: #FFF;
+  padding: 1em;
+}
+.responstable th:first-child {
+  display: table-cell;
+  text-align: center;
+}
+.responstable th:nth-child(2) {
+  display: table-cell;
+}
+.responstable th:nth-child(2) span {
+  display: none;
+}
+.responstable th:nth-child(2):after {
+  content: attr(data-th);
+}
+@media (min-width: 480px) {
+  .responstable th:nth-child(2) span {
+    display: block;
+  }
+  .responstable th:nth-child(2):after {
+    display: none;
+  }
+}
+.responstable td {
+  display: block;
+  word-wrap: break-word;
+  max-width: 7em;
+}
+.responstable td:first-child {
+  display: table-cell;
+  text-align: center;
+  border-right: 1px solid #D9E4E6;
+}
+@media (min-width: 480px) {
+  .responstable td {
+    border: 1px solid #D9E4E6;
+  }
+}
+.responstable th, .responstable td {
+  text-align: left;
+  margin: .5em 1em;
+}
+@media (min-width: 480px) {
+  .responstable th, .responstable td {
+    display: table-cell;
+    padding: 1em;
+  }
+}
+
+/** Responsive tables **/
+
+/** Advance Search **/
+.advanceSearch{
+	width:80%;
+	float:left;
+	height:auto;
+	margin:1em 0 2em 6em;
+	border:1px solid #337ab7;
+	border-radius:5px;
+}
+.advanceSearch h4{
+	color:#FFF;
+	text-align: left;
+    background-color: #2D6DDA;
+    margin: 0;
+    padding: 0.3em 1.5em;
+    font-weight: 100;
+    word-spacing: 0.3em;
+}
+.advanceSearch i{
+	margin:0 0.5em 0 0;
+}
+/** /Advance Search **/
+
+/**Services taken **/
+.servicesTaken{
+	height:300px;
+	width:20%;
+	margin:0;
+	padding:0;
+	float:left;
+}
+.billTable{
+	width:80%;
+	float:left;
+	height:auto;
+	margin:0;
+	padding:0;
+}
+.serviceDesc{
+	width:100%;
+	height:270px;
+	margin:0;
+	padding:0;
+}
+/** /Services Taken**/
+
+/** responsive tables **/
+.responstable1 {
+  margin: 0 0;
+  width: 100%;
+  overflow: hidden;
+  background: #337ab7;
+  color: #024457;
+  border: 1px solid #337ab7;
+  font-size:13px;
+}
+.responstable1 tr {
+  border: 1px solid #337ab7;
+  text-align:center;
+}
+.responstable1 tr:nth-child(odd) {
+  background-color: #EAF3F3;
+}
+.responstable1 th {
+  display: none;
+  border: 1px solid #337ab7;
+  background-color: #337ab7;
+  color: #FFF;
+  padding: 1em;
+}
+.responstable1 th:first-child {
+  display: table-cell;
+  text-align: center;
+}
+.responstable1 th:nth-child(2) {
+  display: table-cell;
+}
+.responstable1 th:nth-child(2) span {
+  display: none;
+}
+.responstable1 th:nth-child(2):after {
+  content: attr(data-th);
+}
+@media (min-width: 480px) {
+  .responstable1 th:nth-child(2) span {
+    display: block;
+  }
+  .responstable1 th:nth-child(2):after {
+    display: none;
+  }
+}
+.responstable1 td {
+  display: block;
+  word-wrap: break-word;
+  max-width: 7em;
+  font-size:14px;
+}
+.responstable1 td:first-child {
+  display: table-cell;
+  text-align: center;
+  border-right: 1px solid #D9E4E6;
+}
+@media (min-width: 480px) {
+  .responstable1 td {
+    border: 1px solid #D9E4E6;
+  }
+}
+.responstable1 th, .responstable1 td {
+  text-align: left;
+  margin: .5em 1em;
+}
+@media (min-width: 480px) {
+  .responstable1 th, .responstable1 td {
+    display: table-cell;
+    padding: 0.4em 0;
+    text-align:center;
+  }
+}
+.responstable1 i{
+	margin: 0;
+    background-color: #337ab7;
+    padding: 0.5em;
+    color: #FFFFFF;
+    border-radius: 10px;
+    width: 10px;
+    height: 10px;
+    font-size: 10px;
+}
+.responstable1 input[type=text]{
+	text-align:center;
+}
+/** Responsive tables **/
+
+//*Button **/
+.btn_look{
+	float: left;
+	margin: 0;
+	color: #FFFFFF;
+	background-color: #337ab7;
+	padding: 0.4em 1.4em 0.3em;
+	border-radius: 3px;
+	border: 1px solid #337ab7;
+}
+
+/**Billing**/
+.billFinals{
+	width:94%;
+	float:left;
+	height:auto;
+	padding:1em;
+}
+.serviceCalculations{
+	width:40%;
+	float:right;
+	height:auto;
+}
+
+.dischargeDetailsTable{
+	padding-bottom:5em;	
+}
+.dischargeDetailsTable select{
+	margin:1em;
+}
+.dischargeDetailsTable label{
+	margin:1em 2em;
+}
+
+/** Billing **/
+
+.logout{
+	background-color: #2D6DDA;
+    width: 100%;
+    height: auto;
+    color: #FFF;
+    float: left;
+    padding: 0.2em 1em;
+}
+
+.logout a{
+	float:right;
+	margin-right:4em;
+	text-decoration:none;
+	color:#FFF;
+}
+
+/** Pop-Up CSS **/
+.popup{
+ 	width: 100%;
+    float: left;
+    height: auto;
+    border: 1px solid #337AB7;
+    border-radius: 5px;	
+}
+
+.popup h4{
+	color: #FFF;
+	text-align: left;
+	background-color: #337AB7;
+	margin: 0px;
+	padding: 0.3em 1.5em;
+	font-weight: 100;
+	word-spacing: 0.3em;
+}
+
+.popup i{
+	margin-right:0.7em;
+}
+
+.popuptable{
+	background-color:#F5F5F5;
+	border-right:10px solid #337AB7;
+	border-bottom:10px solid #337AB7;
+	border-left:10px solid #337AB7;
+	width:100%;
+}
+
+/**Button CSS **/
+.button{
+	font-family: Candara;
+    margin: 0px 1em;
+    color: #FFF;
+    background-color: #337AB7;
+    padding: 0.2em 1.4em 0.3em;
+    border-radius: 3px;
+    border: 1px solid #337AB7;
+}

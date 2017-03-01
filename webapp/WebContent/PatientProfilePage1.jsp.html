@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Patient Profile</title>
+<style>
+table, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+	height:30px;
+}
+td{
+	border: 1px solid black;
+    border-collapse: collapse;
+	height:30px;
+	width:10%;
+}
+
+th
+{
+width:100%;	
+}
+
+.tb2{
+border:none;
+float:right;
+}
+</style>
+</head>
+
+<body>
+<table>
+<tr>
+<td>Name: Mr./Mrs.</td>
+<td>${param.name}</td>
+<td>IPD ID</td>
+<td>${param.ipdId }</td>
+</tr>
+<tr>
+<td>Age:</td>
+<td>${param.age}</td>
+<td >Sex: M/F</td>
+<td>${param.gender}</td>
+<td>Occupation:</td>
+<td>${param.occ}</td>
+</tr>
+<tr>
+<td>Address:</td>
+<td colspan=5>${param.address}</td>
+</tr>
+<tr>
+<td>Next to Kin Mr./Mrs.</td>
+<td colspan=5>${param.ntk}</td>
+</tr>
+<tr>
+<td>Address:</td>
+<td colspan=3>${param.}</td>
+<td>Tel. No.</td>
+<td>${param.contact}</td>
+</tr>
+<tr>
+<td>Addmited On:</td>
+<td>${param.dateofadmission}</td>
+<td>Discharged/Expired on</td>
+<td>${param.dateofdischarge}</td>
+<td>Date Of Expiry</td>
+<td> ${param.dateofexpiry }</td>
+</tr>
+<tr>
+<td>Primary Diagnosis:</td>
+<td colspan=5>${param.pd}</td>
+</tr>
+<tr>
+<td>Final Diagnosis:</td>
+<td colspan=5>${param.fd}</td>
+</tr>
+<tr>
+<td>Cause Of Death:</td>
+<td colspan=5>${param.cod}</td>
+</tr>
+<tr>
+<td>Death Certificate No.</td>
+<td colspan=3>${param.dcno}</td>
+<td>Death Certificate Issue Date:</td>
+<td>${param.dcid}</td>
+</tr>
+<tr>
+<td>Surgeon</td>
+<td>${param.surgeon }</td>
+<td>Date Of Surgery</td>
+<td>${param.dateofsurgery }</td>
+<td>Referred by:</td>
+<td>${param.rd}</td>
+</tr>
+<tr>
+<td>Anaesthetist Doctor</td>
+<td>${param.anaesthetist }</td>
+<td>Anaesthesia Type</td>
+<td>${param.anaesthesiatype }</td>
+</tr>
+
+<tr>
+<td>MLC NO.</td>
+<td colspan=5>${param.mlcno}</td>
+</tr>
+</table>
+<table style="float:right;text-align:center;width:50%;border:none;">
+<tr>
+<td><br/><br/><br/><br/>Signature of M.O.</td>
+</tr>
+</table><br/><br/><br/><br/><br/><br/><br/><br/>
+
+<table>
+<tr>
+<th colspan=6>
+MEDICAL LEGAL RECORD
+</th>
+</tr>
+<tr>
+<td>Informed Police Station/ Chowky</td>
+<td colspan=5></td>
+</tr>
+<tr>
+<td>Constable/ Officer Shri.</td>
+<td colspan=3></td>
+<td>Buckle No.</td>
+<td></td>
+</tr>
+<tr>
+<td>at</td>
+<td></td>
+<td>on</td>
+<td></td>
+<td>by</td>
+<td></td>
+</tr>
+</table>
+
+<table style="float:right;text-align:center;width:50%;" border="0">
+<tr>
+<td><br/><br/><br/><br/>Signature</td>
+</tr>
+</table>
+</body>
+</html>

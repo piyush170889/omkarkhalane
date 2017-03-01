@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style>
+table, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+	height:30px;
+}
+td{
+	border: 1px solid black;
+    border-collapse: collapse;
+	height:30px;
+	width:10%;
+}
+
+th
+{
+width:100%;	
+}
+</style>
+
+</head>
+
+
+
+<body>
+	<table>
+		<tr>
+			<td>I.P.D ID:</td>
+			<td>${param.ipdId}</td>
+			<td>Bill Id</td>
+			<td>${param.billId} <%=  %></td>
+			<td>MLC NO</td>
+			<td>${param.mlcno }</td>		
+		</tr>
+		<tr>
+			<td>Name:</td>
+			<td>${param.patientname}</td>
+			<td>Address:</td>
+			<td colspan=3>${param.patientaddress}</td>		
+		</tr>
+		<tr>
+			<td>Sex:</td>
+			<td>${param.gender}</td>
+			<td>Age:</td>
+			<td>${param.age}</td>
+			<td>Blood Group:</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>D.O.A:</td>
+			<td colspan=2>${param.dateofadmission}</td>
+			<td>D.O.D:</td>
+			<td colspan=2>${param.dateofdischarge}</td>
+		</tr>
+		<tr>
+			<td>Under Dr.</td>
+			<td colspan=2>${param.surgeon}</td>
+			<td>Referred by Dr.</td>
+			<td colspan=2>${param.reference}</td>
+		</tr>
+		<tr>
+			<td>Diagnosis:</td>
+			<td colspan=5>${param.finaldiagnosis}</td>
+		</tr>
+		<tr>
+			<td>Operation:</td>
+			<td colspan=5></td>
+		</tr>
+		<tr>
+			<td>Allergy:</td>
+			<td colspan=5></td>
+		</tr>
+		<tr>
+			<td>History &amp;Clinical Findings:</td>
+			<td colspan=5></td>
+		</tr>
+		<tr>
+			<td>Investigation:</td>
+			<td colspan=5></td>
+		</tr>
+		<tr>
+			<td>Treatment Given / Operation / Delivery Date</td>
+			<td colspan=5>${param.dateofsurgery}</td>
+		</tr>
+		<tr>
+			<td>Surgeon Dr.</td>
+			<td>${param.surgeon}</td>
+			<td>Anaesthetist Dr.</td>
+			<td>${param.anaesthetist}</td>
+			<td>Anaesthesia Type:</td>
+			<td>${param.anaesthesiatype}</td>
+		</tr>
+		<tr>
+			<td>Findings &amp;Procedure/ Child Birth Details:</td>
+			<td colspan=5></td>
+		</tr>
+		<tr>
+			<td>Treatment on Discharge:</td>
+			<td colspan=5></td>
+		</tr>
+		<tr>
+			<td>To Attend O.P.D on:</td>
+			<td colspan=5></td>
+		</tr>
+	</table>
+</body>
+</html>

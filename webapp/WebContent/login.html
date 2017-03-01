@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Omkar Khalane Hospital</title>
+<link rel="stylesheet" type="text/css" href="loginPage/css/style.css" />
+
+<script type="text/javascript">
+
+function validation(){
+	var username=document.getElementById("username").value;
+	var password=document.getElementById("password").value;
+	if(username=="" && password==""){
+		alert('Please Enter Username and Password');
+		return false;
+	}else if(username==""){
+		alert('Please Enter Username ');
+		return false;		
+	}else if(password==""){
+		alert('Please Enter Password ');
+		return false;		
+	}else{
+		return true;
+	}
+}
+</script>
+</head>
+
+<body>
+<div class="loginpage">
+<div class="loginlogo">
+
+</div>
+<div class="logininfo">
+<form action="authenticate" method="post">
+<label class="username">Username</label><br />
+<input class="text" name="Username" id="username" type="text" /><br /><br />
+<label class="username">Password</label><br />
+<input class="text" name="Password" id="password" type="password" /><br />
+<input class="login" name="Login" onclick="return validation()" type="submit" value="Login"/>
+</form>
+</div>
+ <div class="forgotpass">
+<a href="forgotpassword.jsp">Forgot Password?</a>
+</div> 
+<div class="changepass">
+<a href="ChangePassword.jsp">Change Password</a>
+</div>
+</div>
+
+</body>
+</html>

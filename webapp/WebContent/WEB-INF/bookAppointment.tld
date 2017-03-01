@@ -1,0 +1,662 @@
+<taglib>
+  <tlib-version>1.0</tlib-version>
+  <jsp-version>2.0</jsp-version>
+  <short-name>bookAppointment</short-name>
+  
+  <!-- Display Todays Booked Appointments -->
+  <tag>
+    <name>getTodaysBookedAppointmentDetails</name>
+    <tag-class>bookAppointmentTags.todaysBookAppointmentDetails</tag-class>
+  </tag>
+  <!-- /Display Todays Booked Appointments -->
+ 
+  <!-- Display OPDpatientdetails -->
+  <tag>
+    <name>getOPDPatientDetails</name>
+    <tag-class>bookAppointmentTags.OPDPatientDetails</tag-class>
+  </tag>
+  <!-- /Display OPDPatientdetails -->
+  
+   <!-- Display IPDpatientdetails -->
+  <tag>
+    <name>getIPDPatientDetails</name>
+    <tag-class>bookAppointmentTags.IPDPatientDetails</tag-class>
+  </tag>
+  <!-- /Display IPDPatientdetails -->
+  
+ <!-- Todays Booked Appointments Count-->
+ <tag>
+ 	<name>getTotalTodaysBookingCount</name>
+ 	<tag-class>bookAppointmentTags.TotalBookingCount</tag-class>
+ 	<body-content>empty</body-content>
+ </tag>
+ <!-- Todays Booked Appointments Count-->
+ 
+ <!-- Todays Registered Appointment Count-->
+ <tag>
+ 	<name>getTodaysRegisteredAppointmentCount</name>
+ 	<tag-class>bookAppointmentTags.TotalRegisteredCount</tag-class>
+ 	<body-content>empty</body-content>
+ </tag>
+ <!-- Todays Registered Appointment Count-->
+ 
+ <!-- Todays Not Registered Appointment Count-->
+ <tag>
+ 	<name>getTodaysNotRegisteredAppointmentCount</name>
+ 	<tag-class>bookAppointmentTags.TotalNotRegisteredCount</tag-class>
+ 	<body-content>empty</body-content>
+ </tag>
+ <!-- Todays Not Registered Appointment Count-->
+ 
+ <!-- Todays Not Registered Appointment Count-->
+ <tag>
+ 	<name>getTodaysCancelledCount</name>
+ 	<tag-class>bookAppointmentTags.TotalCancelledCount</tag-class>
+ 	<body-content>empty</body-content>
+ </tag>
+ <!-- Todays Not Registered Appointment Count-->
+ 
+ <!-- Booking Id -->
+ <tag>
+ <name>getBookingId</name>
+ <tag-class>bookAppointmentTags.GetBookingId</tag-class>
+ </tag>
+ <!-- /Booking Id -->
+ 
+ <!-- Todays OPD Registration -->
+ <tag>
+ <name>getTodaysOPDAppointments</name>
+ <tag-class>bookAppointmentTags.TodaysOPDCount</tag-class>
+ <body-content>empty</body-content>
+ </tag>
+ <!-- /Todays OPD Registration -->
+ 
+ <!-- Todays OPD Details-->
+ <tag>
+ <name>getTodaysOPDAppointmentDetails</name>
+ <tag-class>bookAppointmentTags.OPDRegistrationsDetails</tag-class>
+ <body-content>empty</body-content>
+ </tag>
+ <!-- /Todays OPD Details -->
+ 
+ <!-- Todays OPD Attended Count -->
+ <tag>
+ <name>getTodaysAttendedOPDCount</name>
+ <tag-class>bookAppointmentTags.OPDAttendedCount</tag-class>
+ <body-content>empty</body-content>
+ </tag>
+ <!-- /Todays OPD Attended Count -->
+ 
+ <!-- Todays OPD Not Attended Count -->
+ <tag>
+ <name>getTodaysNotAttendedOPDCount</name>
+ <tag-class>bookAppointmentTags.OPDNotAttendedCount</tag-class>
+ <body-content>empty</body-content>
+ </tag>
+ <!-- /Todays OPD Not Attended Count -->
+ 
+ <!-- Todays OPD Not Attended Count -->
+ <tag>
+ <name>getTodaysCancelledOPDCount</name>
+ <tag-class>bookAppointmentTags.OPDCancelledCount</tag-class>
+ <body-content>empty</body-content>
+ </tag>
+ <!-- /Todays OPD Not Attended Count -->
+ 
+ <!-- Generate OPD ID -->
+ <tag>
+ <name>getOPDID</name>
+ <tag-class>bookAppointmentTags.GetOPDId</tag-class>
+ <body-content>empty</body-content>
+ </tag>
+ <!-- /Generate OPD ID  -->
+ 
+ 
+  <!-- Generate OPD ID -->
+ <tag>
+ <name>getDeptId</name>
+ <tag-class>bookAppointmentTags.GetDeptId</tag-class>
+ <body-content>empty</body-content>
+ </tag>
+ <!-- /Generate OPD ID  -->
+ 
+ <!-- Generate IPD ID -->
+ <tag>
+ <name>getIPDID</name>
+ <tag-class>bookAppointmentTags.GetIPDId</tag-class>
+ <body-content>empty</body-content>
+ </tag>
+ <!-- /Generate IPD ID  -->
+ 
+ <!-- Todays IPD Appointment Count -->
+ <tag>
+ <name>getTodaysIPDCount</name>
+ <tag-class>bookAppointmentTags.TodaysIPDCount</tag-class>
+ <body-content>empty</body-content>
+ </tag>
+ <!-- Todays IPD Appointment Count -->
+ 
+ <!-- IPD Appointment Details -->
+ <tag>
+ <name>getTodaysIPDAppointmentDetails </name>
+ <tag-class>bookAppointmentTags.TodaysIPDAppointmentDetails</tag-class>
+ <body-content>empty</body-content>
+ </tag>
+ <!-- /IPD Appointment Details -->
+ 
+ <!-- Advance Searchtable -->
+ <tag>
+ <name>getAdvanceSearchDetails</name>
+ <tag-class>bookAppointmentTags.AdvanceSearchDetails</tag-class>
+ <attribute>
+ <name>startDate</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <attribute>
+ <name>endDate</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <attribute>
+ <name>searchType</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ </tag>
+ <!-- /Advance Searchtable -->
+ 
+ <!-- Billing Tags -->
+ <tag>
+ <name>getPreviousBalance</name>
+ <tag-class>bookAppointmentTags.GetPreviousBalance</tag-class>
+ <attribute>
+ <name>billId</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ </tag>
+ 
+ <tag>
+ <name>getServiceDetails</name>
+ <tag-class>bookAppointmentTags.GetServiceList</tag-class>
+ </tag>
+ <!-- /Billing Tags -->
+ 
+ <!-- Doctors Id -->
+ <tag>
+ <name>getDoctorId</name>
+ <tag-class>bookAppointmentTags.GetDoctorId</tag-class>
+ <body-content>empty</body-content>
+ </tag>
+ <!-- Doctors Id -->
+ 
+ <!-- Service Id -->
+ <tag>
+ <name>getServiceId</name>
+ <tag-class>bookAppointmentTags.GetServiceId</tag-class>
+ <body-content>empty</body-content>
+ </tag>
+ <!-- /Service Id -->
+ 
+ 
+  <!-- Room Id -->
+ <tag>
+ <name>getRoomId</name>
+ <tag-class>bookAppointmentTags.GetRoomId</tag-class>
+ <body-content>empty</body-content>
+ </tag>
+ <!-- /Room Id -->
+ 
+
+ <!-- Refernce Doctors Id -->
+ <tag>
+ <name>getRDoctorId</name>
+ <tag-class>bookAppointmentTags.GetRDoctorId</tag-class>
+ <body-content>empty</body-content>
+ </tag>
+ <!-- /Refernce Doctors Id -->
+
+ <!-- Reception Id -->
+ <tag>
+ <name>getReceptionId</name>
+ <tag-class>bookAppointmentTags.GetReceptionId</tag-class>
+ <body-content>empty</body-content>
+ </tag>
+ <!-- /Reception Id -->
+ 
+ <!-- View Service Details -->
+ <tag>
+ <name>viewServiceDetails</name>
+ <tag-class>bookAppointmentTags.ViewServices</tag-class>
+ </tag>
+ <!-- /View Service Details -->
+ 
+ 
+  <!-- View Room Details -->
+ <tag>
+ <name>viewRoomDetails</name>
+ <tag-class>bookAppointmentTags.ViewRoom</tag-class>
+ </tag>
+ <!-- /View Service Details -->
+ 
+
+<!-- View Departmeint Details -->
+ <tag>
+ <name>viewDepartmentDetails</name>
+ <tag-class>bookAppointmentTags.ViewDepartment</tag-class>
+ </tag>
+ <!-- /View Departmeint Details -->
+
+<!-- View Refernce Doctor Details -->
+ <tag>
+ <name>viewRDocotrsDetails</name>
+ <tag-class>bookAppointmentTags.ViewRDoctors</tag-class>
+ </tag>
+ <!-- /View Refernce Doctor Details -->
+
+ <!-- View Doctor Details -->
+ <tag>
+ <name>viewDocotrsDetails</name>
+ <tag-class>bookAppointmentTags.ViewDoctors</tag-class>
+ </tag>
+ <!-- /View Doctor Details -->
+ 
+ <!-- View Reception details -->
+ <tag>
+ <name>viewReceptionDetails</name>
+ <tag-class>bookAppointmentTags.ViewreceptionDetails</tag-class>
+ </tag>
+ <!-- /View Reception details -->
+ 
+ <!-- Get Doctor Details -->
+ <tag>
+ <name>getDoctorList</name>
+ <tag-class>bookAppointmentTags.GetDoctorList</tag-class>
+ <body-content>empty</body-content>
+ </tag>
+ <!-- Get Doctor Details -->
+ 
+ <!-- Get Room type list -->
+ <tag>
+ <name>getRoomList</name>
+ <tag-class>bookAppointmentTags.GetRoomList</tag-class>
+ <body-content>empty</body-content>
+ </tag>
+ <!-- Get Room type list-->
+ 
+ <!-- get IND IPDPatient Details -->
+ <tag>
+ <name>getINDIPDPatientDetails</name>
+ <tag-class>bookAppointmentTags.INDIPDPatientDetails</tag-class>
+ <attribute>
+ <name>name</name>
+ <required>false</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <attribute>
+ <name>id</name>
+ <required>false</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <attribute>
+ <name>contact</name>
+ <required>false</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <body-content>empty</body-content>
+ </tag>
+ <!-- /get IND IPDPatient Details -->
+ 
+ 
+ 
+  <!-- get IND OPDPatient Details -->
+ <tag>
+ <name>getINDOPDPatientDetails</name>
+ <tag-class>bookAppointmentTags.INDOPDPatientDetails</tag-class>
+ <attribute>
+ <name>name</name>
+ <required>false</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <attribute>
+ <name>id</name>
+ <required>false</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <attribute>
+ <name>contact</name>
+ <required>false</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <body-content>empty</body-content>
+ </tag>
+ <!-- /get IND OPDPatient Details -->
+ 
+ 
+ <tag>
+ <name>OPDBill_info</name>
+ <tag-class>bookAppointmentTags.OPDBill_info</tag-class>
+ <attribute>
+ <name>bill_id</name>
+ <required>false</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <attribute>
+ <name>o_id</name>
+ <required>false</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <body-content>empty</body-content>
+ </tag>
+ 
+   <!-- get IND OPDPatient Details -->
+ <tag>
+ <name>getINDOPDAPPatientDetails</name>
+ <tag-class>bookAppointmentTags.INDOPDAPPatientDetails</tag-class>
+ <attribute>
+ <name>name</name>
+ <required>false</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <attribute>
+ <name>id</name>
+ <required>false</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <attribute>
+ <name>contact</name>
+ <required>false</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <body-content>empty</body-content>
+ </tag>
+ <!-- /get IND OPDPatient Details -->
+ 
+ 
+ 
+  <!-- get IND OPDPatient Details -->
+ <tag>
+ <name>getINDAPIPDAPPatientDetails</name>
+ <tag-class>bookAppointmentTags.INDAPIPDPatientDetails</tag-class>
+ <attribute>
+ <name>name</name>
+ <required>false</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <attribute>
+ <name>id</name>
+ <required>false</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <attribute>
+ <name>contact</name>
+ <required>false</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <body-content>empty</body-content>
+ </tag>
+ <!-- /get IND OPDPatient Details -->
+ 
+ <!-- Advance Searchtable -->
+ <tag>
+ <name>getAdvanceSearchDetails</name>
+ <tag-class>bookAppointmentTags.AdvanceSearchDetails</tag-class>
+ <attribute>
+ <name>startDate</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <attribute>
+ <name>endDate</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <attribute>
+ <name>searchType</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ </tag>
+ <!-- /Advance Searchtable -->
+ 
+ 
+  <!-- Advance Searchtable patient -->
+ <tag>
+ <name>getAdvanceSearchpatientDetails</name>
+ <tag-class>bookAppointmentTags.AdvanceSearchPatientDetails</tag-class>
+ <attribute>
+ <name>startDate</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <attribute>
+ <name>endDate</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <attribute>
+ <name>searchType</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ </tag>
+ <!-- /Advance Searchtab patient -->
+ 
+<!-- Advance Searchtable patient -->
+
+
+
+ <tag>
+ <name>getAdvanceSearchpatientDetails1</name>
+
+ <tag-class>bookAppointmentTags.AdvanceSearchPatientDetails1</tag-class>
+ <attribute>
+ <name>startDate</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <attribute>
+ <name>endDate</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <attribute>
+ <name>searchType</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ </tag>
+ <!-- /Advance Searchtab patient -->
+
+ 
+ <!-- Services List By Id -->
+ <tag>
+ <name>getServiceDetailsById</name>
+ <tag-class>bookAppointmentTags.GetServiceInfoBySID</tag-class>
+ <attribute>
+ <name>stid</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ </tag>
+ <!--  -->
+ 
+ 
+  <!-- service Report -->
+ <tag>
+ <name>servicereport</name>
+ <tag-class>bookAppointmentTags.ServiceReport</tag-class>
+ <attribute>
+ <name>startDate</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <attribute>
+ <name>endDate</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ </tag>
+ <!-- /service Reportt -->
+ 
+ 
+ 
+ 
+ 
+ <!-- Consulting Doctor Report -->
+ <tag>
+ <name>consultingdoctorreport</name>
+ <tag-class>bookAppointmentTags.ConsultingDoctorReport</tag-class>
+ <attribute>
+ <name>startDate</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <attribute>
+ <name>endDate</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ </tag>
+ <!-- /Consulting Doctor Report -->
+ 
+ 
+ <!-- Refernce Doctor Report -->
+ <tag>
+ <name>referencedoctorreport</name>
+ <tag-class>bookAppointmentTags.ReferenceDoctorReport</tag-class>
+ <attribute>
+ <name>startDate</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <attribute>
+ <name>endDate</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ </tag>
+ <!-- /Refernce Doctor Report -->
+ 
+ <!--  Department Report -->
+ <tag>
+ <name>Departmentreport</name>
+ <tag-class>bookAppointmentTags.DepartmentReport</tag-class>
+ <attribute>
+ <name>startDate</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <attribute>
+ <name>endDate</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ </tag>
+ <!-- / Department Report -->
+ 
+  <!-- Display getOPDPatientReport -->
+  <tag>
+    <name>getOPDPatientReport</name>
+    <tag-class>bookAppointmentTags.GetOPDPatientReport</tag-class>
+  </tag>
+  <!-- /Display getOPDPatientReport -->
+  
+  <!-- Display getIPDPatientReport -->
+  <tag>
+    <name>getIPDPatientReport</name>
+    <tag-class>bookAppointmentTags.GetIPDPatientReport</tag-class>
+  </tag>
+  <!-- /Display getIPDPatientReport -->
+  <!-- Get Refernce Doctor Details -->
+ <tag>
+ <name>getRefernceDoctorList</name>
+ <tag-class>bookAppointmentTags.GetRefernceDoctorList</tag-class>
+ <body-content>empty</body-content>
+ </tag>
+ <!-- Get Refernce Details -->
+ 
+  <!-- Get Department Details -->
+ <tag>
+ <name>getDepartmentList</name>
+ <tag-class>bookAppointmentTags.GetDepartmentList</tag-class>
+ <body-content>empty</body-content>
+ </tag>
+ <!-- Get Department Details -->
+ 
+ <!-- Get Refernce Doctor Details -->
+ <tag>
+ <name>getRefernceDoctorDetails</name>
+ <tag-class>bookAppointmentTags.GetRefernceDoctorDetails</tag-class>
+ <attribute>
+ <name>refernceDoctor</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <attribute>
+ <name>id</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ </tag>
+ <!-- /Get Refernce Doctor Details -->getRefernceIPDPatientDetails
+ 
+ 
+ <!-- get Refernce OPD Patient Details -->
+ <tag>
+ <name>getRefernceOPDPatientDetails</name>
+ <tag-class>bookAppointmentTags.GetRefernceOPDPatientDetails</tag-class>
+ <attribute>
+ <name>refernceDoctor</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <attribute>
+ <name>id</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <attribute>
+ <name>startDate</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <attribute>
+ <name>endDate</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ </tag>
+ 
+ <!-- /get Refernce OPD Patient Details -->
+ 
+ <!-- get Refernce IPD Patient Details -->
+ <tag>
+ <name>getRefernceIPDPatientDetails</name>
+ <tag-class>bookAppointmentTags.GetRefernceIPDPatientDetails</tag-class>
+ <attribute>
+ <name>refernceDoctor</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <attribute>
+ <name>id</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <attribute>
+ <name>startDate</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ <attribute>
+ <name>endDate</name>
+ <required>true</required>
+ <rtexprvalue>true</rtexprvalue>
+ </attribute>
+ </tag>
+ 
+ <!-- /get Refernce IPD Patient Details -->
+ 
+</taglib>
